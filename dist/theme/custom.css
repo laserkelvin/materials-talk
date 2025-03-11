@@ -1,0 +1,48 @@
+@font-face {
+    font-family: OpenGorton;
+    src: url("./fonts/OpenGorton-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: OpenGorton;
+    font-weight: bold;
+    src: url("./fonts/OpenGorton-Bold.otf") format("opentype");
+}
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url("./black.css");
+
+:root {
+  --r-main-font: League Spartan, Source Sans Pro, Helvetica, sans-serif;
+  --r-header-font: League Spartan, Source Sans Pro, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: calc(3.325rem + .9vw)
+}
+
+h2 {
+  font-size: calc(2.325rem + .9vw)
+}
+
+body {
+  font-size: calc(1rem + .9vw);
+  text-align: left;
+}
+
+.reveal-viewport {
+  background-color: #d8d0ca;
+}
+
+.reveal .progress {
+  color: #c0b0a3;
+  height: 1%;
+}
+
+.card {
+  background-color: #c0b0a3;
+}
+
+.citation {
+  font-size: small;
+  position: absolute;
+  display: block;
+}

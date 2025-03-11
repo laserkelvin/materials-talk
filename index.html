@@ -4,20 +4,412 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Lila Seminar - Kelvin Lee</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/theme/custom.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section>
+          <div class="container text-wrap text-center">
+            <div class="row">
+              <div class="col-4">
+                <h1 style="text-transform: capitalize; text-align: left;">Neural representations of atoms</h1>
+                <hr>
+              </div>
+              <div class="col-2">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <h3 style="text-align: left">Making atomistic models work for us</h3>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+              </div>
+              <div class="col-4">
+                <h3 style="text-align: left">Kelvin Lee</h3>
+                <h3 style="text-align: left">AI Research Scientist</h3>
+                <h3 style="text-align: left">Intel Labs&mdash;AI4Science</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col d-flex align-items-center">
+                  <h1>About me</h1>
+                </div>
+                <div class="col">
+                  <ul class="list-group text-end">
+                    <li class="list-group-item">Born in Hong Kong, grew up in New Zealand & Australia</li>
+                    <li class="list-group-item">Currently lives in Portland, OR</li>
+                    <li class="list-group-item">Enjoys sim racing</li>
+                    <li class="list-group-item">Enjoys ☕️ & food</li>
+                    <li class="list-group-item">Enjoys hiking</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container text-center">
+              <div class="row align-items-center">
+                <div class="col-6 align-items-center">
+                  <figure>
+                    <img src="https://scitechdaily.com/images/Molecular-Photonics-Laboratory-UNSW-Sydney-777x518.jpg" class="img-fluid border-primary-subtle rounded-5">
+                  <figcaption>
+                      <p style="font-size: calc(0.2rem + 0.9vw);"><small>*Professional photoshoot&mdash;do not attempt at home</small></p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col text-end align-items-center">
+                  <p>PhD in physical chemistry<br>University of New South Wales, Sydney</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container align-items-center">
+              <div class="row align-items-center">
+                <div class="col rounded-5 fade-in">
+                  <figure>
+                    <img src="assets/acetaldehyde.png" class="img-fluid rounded-5">
+                    <figcaption>
+                      <p>State-to-state reaction dynamics</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col rounded-5 fade-in">
+                  <figure>
+                    <img src="assets/vmi.png" class="img-fluid rounded-5">
+                    <figcaption>
+                      <p>Ion imaging</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col rounded-5 fade-in">
+                  <figure>
+                    <img src="assets/ethane.png" class="img-fluid rounded-5">
+                    <figcaption>
+                      <p>High accuracy<br>ab initio thermochemistry</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container text-center">
+              <div class="row align-items-center">
+                <div class="col-6 align-items-center">
+                  <figure>
+                    <video src="./assets/mauna-kea.mp4" class="object-fit-contain img-fluid rounded-5" type="video/mp4" loop muted autoplay></video>
+                    <figcaption>
+                      <p style="font-size: calc(0.2rem + 0.9vw);"><small>Submillimeter array @ Mauna Kea, HI</small></figcaption>
+                  </figure>
+                </div>
+                <div class="col text-end align-items-center">
+                  <p><b>Postdoctoral research at:</b></p>
+                  <p>Center for Astrophysics | Harvard & Smithsonian (2017&ndash;2020)</p>
+                  <p>MIT Chemistry (2020&ndash;2021)</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container align-items-center">
+              <div class="row align-items-center">
+                <div class="col rounded-5 fade-in">
+                  <figure>
+                    <img src="assets/ethynethiol.png" class="img-fluid rounded-5">
+                    <figcaption>
+                      <p>Spectroscopy of reactive intermediates</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col rounded-5 fade-in">
+                  <figure>
+                    <img src="assets/mixture.png" class="img-fluid rounded-5">
+                    <figcaption>
+                      <p>Automated spectroscopic mixture separation</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col rounded-5 fade-in">
+                  <figure>
+                    <img src="assets/whatsthatmol.png" class="img-fluid rounded-5">
+                    <figcaption>
+                      <p>Structure determination with deep learning</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Present Day</h1>
+            <hr>
+            <h2>AI4Science</h2>
+          </section>
+          <section>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <div class="card h-100 align-items-center">
+                    <img src="./assets/triton-logo.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        High-performance computing
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./assets/neural-splash.png" class="card-img-top rounded-circle">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Deep learning with materials & chemistry
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="..." class="card-img-top rounded-circle">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Agentic workflows for science
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col opacity-50">
+                  <div class="card h-100">
+                    <img src="./assets/triton-logo.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        High-performance computing
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./assets/neural-splash.png" class="card-img-top rounded-circle">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Deep learning with materials & chemistry
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col opacity-50">
+                  <div class="card h-100">
+                    <img src="..." class="card-img-top rounded-circle">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Agentic workflows for science
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Neural representations of atomistic systems</h1>
+            <hr>
+            <h3>What, why, and how?</h3>
+          </section>
+          <section>
+            <h1>Problem statement</h1>
+            <p class="fragment fade-in-then-semi-out">We want a molecule/material with property $X$ for application $Y$</p>
+            <figure class="mt-5 fragment fade-in">
+              <blockquote class="blockquote">
+                <p>A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                <p>Alfred Korzybski</p>
+              </figcaption>
+            </figure>
+            <p class="fragment mt-5 fst-italic">We want a useful map of chemical space</p>
+          </section>
+          <section data-background-image="./assets/chemical-boston.svg">
+          </section>
+          <section>
+            <h1>How do we build a useful map of chemical space?</h1>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-4 d-flex align-items-center">
+                  <h2 style="text-align: left;">Learning from data</h2>
+                  <hr>
+                </div>
+                <div class="col-8">
+                  <figure>
+                    <figcaption>
+                      <p><i class="fa-brands fa-github"></i> IntelLabs/matsciml</p>
+                    </figcaption>
+                    <img class="rounded-5 img-fluid" src="./assets/matsciml.png">
+                  </figure>
+                  <p>Framework for data-driven experimentation</p>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <cite class="citation text-start">Miret, <span class="fst-bold"><b>Lee</b></span>, Gonzales, Nassar, Spellings;<br>The Open MatSciML Toolkit (2023), TMLR</cite>
+            </footer>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col">
+                  <figure>
+                    <img src="./assets/matsciml-flow.png" style="max-height: 30vw" class="img-fluid rounded-2">
+                  </figure>
+                </div>
+                <div class="col text-end">
+                  <p class="fragment fade-in-then-semi-out">Interfaces to major datasets: Open Catalyst, Materials Project, Alexandria, NOMAD</p>
+                  <p class="fragment fade-in-then-semi-out">Modular pipeline for foundation model training</p>
+                  <p class="fragment fade-in-then-semi-out">Reference model interfaces and implementations</p>
+                  <p class="fragment fade-in fst-bold">Free composition of multiple tasks and datasets</p>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <cite class="text-start citation"><span><b>Lee</b>, Gonzales, Spellings, Galkin, Miret, Kumar;<br>Towards Foundation Models for Materials Science,<br>Proceedings of the SC'23 Workshops (2023)</cite>
+            </footer>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <figure>
+                    <img src="./assets/matsciml-benchmark.png" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col text-end">
+                  <p>Looking for synergies between datasets that improve modeling performance</p>
+                  <p>Certain combinations of datasets improve joint modeling performance</p>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <cite class="citation text-start">
+                <span><b>Lee</b></span>, Gonzales, Nassar, Spellings, Galkin, Miret<br>
+                MatSciML: A Broad, Multi-Task Benchmark for Solid-State Materials Modeling<br>
+                arXiv preprint arXiv:2309.05934 (2023)
+              </cite>
+            </footer>
+          </section>
+          <section>
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <figure>
+                    <img src="./assets/sc23-umap.png" class="img-fluid img-thumbnail border border-primary-subtle">
+                  </figure>
+                </div>
+                <div class="col-4 text-end">
+                  <p class="fragment fade-in-then-semi-out">Projections of latent structures show dataset distribution modes</p>
+                  <p class="fragment fade-in-then-semi-out">Model test performance improves with data overlap</p>
+                  <p class="fragment fade-in">...but performs worse when data distribution is discontinuous!</p>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <cite class="text-start citation"><span><b>Lee</b>, Gonzales, Spellings, Galkin, Miret, Kumar;<br>Towards Foundation Models for Materials Science,<br>Proceedings of the SC'23 Workshops (2023)</cite>
+            </footer>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Decomposing <span class="text-body-secondary">(equivariant)</span> representations</h1>
+            <hr>
+            <h3>How do we bridge the gap between research and production?</h3>
+          </section>
+          <section>
+            <p>Two pieces of recent work that indicate we need better crafting of learned representations</p>
+            <p>Recent NeurIPS AI4Mat work on equivariant latents</p>
+            <p>Work with Pete on tensor property prediction</p>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-4 d-flex align-items-center">
+                  <h2 style='text-align: left;'>Path to production</h2>
+                  <hr>
+                </div>
+                <div class="col-8 text-end">
+                  <p>Diversity in composition <br>and structural space</p>
+                  <p>Inference at coupled-cluster levels</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-4 d-flex align-items-center">
+                  <h2 style="text-align: left;">Summary</h2>
+                  <hr>
+                </div>
+                <div class="col-8 text-end">
+                  <p class="fragment fade-in-then-semi-out">Developed Open MatSciML Toolkit as a framework for experimentation</p>
+                  <p class="fragment fade-in-then-semi-out">Composable framework enabled search for data synergies in foundation model training</p>
+                  <p class="fragment fade-in-then-semi-out">Modeling performance stems not just from data, but also from learned latents</p>
+                  <p class="fragment fade-in-then-semi-out">Experiments show physical inductive biases may still need regularization</p>
+                  <p class="fragment fade-in-then-semi-out">Need to evaluate latent structures qualitatively!</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-4 d-flex align-items-center">
+                  <p class="text-start">Acknowledgements</p>
+                  <hr>
+                </div>
+                <div class="col-8 text-end">
+                  <div class="row d-flex">
+                    <p><b>Intel Labs</b></p><p>Santiago Miret &middot; Carmelo Gonzales<br>Mikhail Galkin &middot; Lory Wang</p>
+                  </div>
+                  <div class="row d-flex">
+                    <p><b>MIT</b></p><p>Pete Miedaner &middot; Shiang Fang</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
 			</div>
 		</div>
 
@@ -25,15 +417,20 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+        progress: true,
+        viewDistance: 10,
+        autoPlayMedia: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
 		</script>
 	</body>
