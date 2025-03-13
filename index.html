@@ -88,7 +88,7 @@
               <div class="row align-items-center">
                 <div class="col-6 align-items-center">
                   <figure>
-                    <img src="https://scitechdaily.com/images/Molecular-Photonics-Laboratory-UNSW-Sydney-777x518.jpg" class="img-fluid border-primary-subtle rounded-5">
+                    <img src="./assets/lab-photo.png" class="img-fluid border-primary-subtle rounded-5">
                   <figcaption>
                       <p style="font-size: calc(0.2rem + 0.9vw);"><small>*Professional photoshoot&mdash;do not attempt at home</small></p>
                     </figcaption>
@@ -306,13 +306,6 @@
             </figure>
             <p class="fragment mt-5 fst-italic">We need a useful map of chemical space<br>&mdash;or a sufficiently holistic representation</p>
           </section>
-          <section data-background-image="./assets/chemical-boston.svg">
-            <aside class="notes">
-              <p>Conceptually, a map doesn't have to have a 1:1 correspondence, but good enough for A to B</p>
-              <p>The dream would be to have a foundation model that unifies chemistry domains, in a way that humans haven't been able to do well</p>
-              <p>The ideal chemical map would tell you where a composition and structure might be, and what properties it might have</p>
-            </aside>
-          </section>
           <section>
             <h1>How do we build a useful representation?</h1>
           </section>
@@ -377,7 +370,7 @@
                     </figcaption>
                     <img class="rounded-5 img-fluid" src="./assets/matsciml.png">
                   </figure>
-                  <p>Framework for glueing data with models</p>
+                  <p>End-to-end framework for AI materials modeling</p>
                 </div>
               </div>
             </div>
@@ -627,7 +620,7 @@
                   <p>$l=0,1,2$ have physical interpretations&mdash;what about $l>2$?</p>
                 </div>
                 <div class="col">
-                  <p>What do their latent variables represent?</p>
+                  <p>What information is captured in equivariant features?</p>
                 </div>
               </div>
             </div>
@@ -684,7 +677,11 @@
           </section>
           <section>
             <aside class="notes">
-              <p></p>
+              <p>Each panel shows the PHATE projection of features for a given $l$</p>
+              <p>Color code is spatial score, which is a rudimentary estimate for molecular complexity</p>
+              <p>Only the scalar space is structured!</p>
+              <p>Higher order features are unstructured, and seem to be unused</p>
+              <p>Extending the basis set interestingly shows structure at $l>=4$</p>
             </aside>
             <div class="container">
               <div class="row align-items-center d-flex">
@@ -700,14 +697,56 @@
             </div>
           </section>
           <section>
+            <p>If we remove spherical harmonic terms, performance improves</p>
+            <p>This means we have to potentially think about $l$ as a hyperparameter</p>
+            <p>Not just a basis set, or we have to find ways to regularize</p>
+          </section>
+          <section>
+            <p>Initial result was based off a scalar quantity</p>
+            <p>Follow-up with Pete on hyperpolarizability tensors shows the same thing happening</p>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>To summarize what I've covered in this talk</p>
+              <p>This notion of representation learning to approximate at least a portion of chemical space</p>
+              <p>To achieve this, we built out matsciml as a platform for composing data, models, and training strategies</p>
+              <p>Some early work we've done with this shows a strong need for data and task alignment</p>
+              <p>Latent visualizations in support of this prompted a need to understand what and how equivariant models learn</p>
+              <p>Experiments with toy equivariant models show underutilization of latent dimensionality</p>
+              <p>Suggests more performance left on the table as we build out a stronger use case for these models</p>
+            </aside>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-4 text-start">
+                  <h2>Summary</h2>
+                  <hr>
+                </div>
+                <div class="col text-end">
+                  <p class="fragment fade-in-then-semi-out">
+                    Representation learning of materials as mapping out chemical space
+                  </p>
+                  <p class="fragment fade-in-then-semi-out">
+                    Open MatSciML Toolkit as a platform for experimentation
+                  </p>
+                  <p class="fragment fade-in-then-semi-out">
+                    Data composition and latent visualizations show need for alignment
+                  </p>
+                  <p class="fragment fade-in-then-semi-out">
+                    Equivariant latents are not properly utilized
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
             <aside class="notes">
               <p>The advantage of doing pretraining is so that you can catch and steer the behavior of models before full scale training</p>
               <p>Having measurables based purely on embeddings means we can predict its behavior **before** we evaluate it on properties</p>
               <p>Generalization</p>
             </aside>
             <div class="container">
-              <div class="row">
-                <div class="col-4 d-flex align-items-center">
+              <div class="row align-items-center">
+                <div class="col-4">
                   <h2 style='text-align: left;'>Future &<br> ongoing work</h2>
                   <hr>
                 </div>
@@ -719,10 +758,13 @@
             </div>
           </section>
           <section>
+            <h1>Path(s) to a useful map</h1>
+          </section>
+          <section>
             <aside class="notes">
               <p>Bringing it back to our original goal, how do we build a useful map?</p>
               <p>We recently submitted our "positions" paper to ICML with collaborators</p>
-              <p>Here I'm highlighting two areas that are critical to</p>
+              <p>Directly related to what I just talked about, we need a better handle on training equivariant models in order to take advantage of data scaling</p>
               <p>In terms of data, the MatSciML experiments I talked about earlier shows that models are unable to bridge the gap between data modes</p>
               <p>When you plot the distribution of compositions in MP and the American Mineral Crystal Structures database, we know "real-world" materials are significantly more complex</p>
               <p>The other area is the quality of the labels&mdash;we know DFT fails to describe complicated systems</p>
@@ -732,11 +774,13 @@
             </aside>
             <div class="container">
               <div class="row">
-                <h2>Path to a useful map</h2>
-                <h4>...or production</h4>
+                <h2>MLIPs for real-world inference</h2>
                 <hr>
               </div>
               <div class="row h-100 align-items-center">
+                <div class="col">
+                  <p>Interpretable (equivariant) models&mdash;white box methods</p>
+                </div>
                 <div class="col">
                   <figure>
                     <img src="./assets/amcsd.png" class="img-fluid rounded-5">
@@ -759,25 +803,41 @@
               <cite class="text-start citation">Miret, <b>Lee</b>, Gonzales, Mannan, Krishnan<br>Energy & force regression on DFT trajectories is not enough<br>for universal machine learning interatomic potentials,<br>Submitted to ICML (2025)<br>arXiv:2502.03660</cite>
             </footer>
           </section>
-        </section>
-        <section>
           <section>
+            <aside class="notes">
+              <p>Previous slide in some ways only solve the near-term problem</p>
+              <p>A potentially more holistic notion of a continuous space would unlock and generalize discovery across domains</p>
+              <p>The scope of that also means that we need to have a unified representation to come up with new molecules and materials, simulate them in silico, and validate them in the lab</p>
+              <p>I think the unifying concept behind all of this is spectroscopy: the closest thing we can get to quantum mechanical nature of atoms</p>
+              <p>Like the wavefunction, once you have this unified representation, we can do anything with it</p>
+              <p>Diagram from my old faculty proposal from 2020&mdash;these ideas have been stewing in my mind but until Lila's mission of super intelligence came along, there's never been a potential good fit</p>
+              <p>Combination of lab, theory, and AI could get us to something like this</p>
+              <p>Potential of collaborating with different domains under one roof</p>
+            </aside>
             <div class="container">
-              <div class="row">
-                <div class="col-4 d-flex align-items-center">
-                  <h2 style="text-align: left;">Summary</h2>
+              <div class="row align-items-center">
+                <div class="col text-start">
+                  <h2>Unified chemical representations</h2>
                   <hr>
+                  <p>MLIPs are only a niche within chemistry</p>
+                  <p>Holistic, "full stack" chemical autonomy needs <b>generation</b>, <b>simulation</b>, and <b>validation</b> in a loop</p>
+                  <p>...conditioned on the physical world!</p>
                 </div>
-                <div class="col-8 text-end">
-                  <p class="fragment fade-in-then-semi-out">Developed Open MatSciML Toolkit as a framework for experimentation</p>
-                  <p class="fragment fade-in-then-semi-out">Composable framework enabled search for data synergies in foundation model training</p>
-                  <p class="fragment fade-in-then-semi-out">Modeling performance stems not just from data, but also from learned latents</p>
-                  <p class="fragment fade-in-then-semi-out">Experiments show physical inductive biases may still need regularization</p>
-                  <p class="fragment fade-in-then-semi-out">Need to evaluate latent structures qualitatively!</p>
+                <div class="col">
+                  <figure>
+                    <img src="./assets/universal_rep.png" class="img-fluid">
+                  </figure>
                 </div>
               </div>
             </div>
           </section>
+          <section data-background-image="./assets/chemical-boston.svg">
+            <aside class="notes">
+              <p></p>
+            </aside>
+          </section>
+        </section>
+        <section>
           <section>
             <div class="container">
               <div class="row">
@@ -795,34 +855,6 @@
                   <div class="row d-flex">
                     <p><b>IIT Delhi</b>&mdash;</p><p>Sajid Mannan &middot; N. M. Anoop Krishnan</p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <aside class="notes">
-              <p>Not a lot of people would be able to align a laser, run ab initio calculations, and design and implement an AI framework</p>
-              <p>I think this perspective is relatively unique, and has me thinking about things that go beyond MLIPs</p>
-              <p>Things I've talked about today are partial steps to building out a useful map, and capabilities along the way</p>
-              <p>But the true capability that might be unique to my perspective and Lila is a more holistic and unified approach</p>
-              <p>The idea of learning joint representations from experimental observables would bring us as close as possible to a real foundation model</p>
-              <p>This unified embedding space could be used for the full autonomous stack: conditional generation, in-the-loop simulations, and finally experimental validation</p>
-            </aside>
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col text-start">
-                  <h2>Pitch</h2>
-                  <hr>
-                  <p>What's needed to bridge the gap between model research and application</p>
-                  <p>Holistic, "full stack" chemical autonomy needs <b>generation</b>, <b>simulation</b>, and <b>validation</b></p>
-                </div>
-                <div class="col">
-                  <figure>
-                    <img src="./assets/universal_rep.png" class="img-fluid">
-                    <figcaption>
-                      <p>Unified neural representations beyond MLIPs</p>
-                    </figcaption>
-                  </figure>
                 </div>
               </div>
             </div>
