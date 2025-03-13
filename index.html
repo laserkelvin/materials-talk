@@ -15,6 +15,7 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/theme/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 	</head>
 	<body>
 		<div class="reveal">
@@ -49,24 +50,40 @@
         </section>
         <section>
           <section>
+            <aside class="notes">
+              <p>I was born in Hong Kong, grew up in NZ, and finished my schooling in Sydney, AU</p>
+              <p>Common question: my parents aren't scientists, but Kelvin is a pretty common name amongst Hong Kongers</p>
+              <p>I currently live in Portland with my wife and two cats</p>
+              <p>Being in Portland, we have access to great nature, specialty coffee, and very adventurous food</p>
+            </aside>
             <div class="container">
-              <div class="row">
-                <div class="col d-flex align-items-center">
-                  <h1>About me</h1>
+              <div class="row align-items-center">
+                <div class="col-3">
+                  <h1 class="text-start">About Me</h1>
                 </div>
                 <div class="col">
                   <ul class="list-group text-end">
                     <li class="list-group-item">Born in Hong Kong, grew up in New Zealand & Australia</li>
-                    <li class="list-group-item">Currently lives in Portland, OR</li>
-                    <li class="list-group-item">Enjoys sim racing</li>
-                    <li class="list-group-item">Enjoys ☕️ & food</li>
-                    <li class="list-group-item">Enjoys hiking</li>
+                    <li class="list-group-item">Parents are <b>not</b> scientists, despite name</li>
+                    <li class="list-group-item fragment fade-in" data-fragment-index="1">Currently lives in Portland, OR</li>
+                    <li class="list-group-item fragment fade-in" data-fragment-index=2>Enjoys nature in the Pacific Northwest</li>
+                    <li class="list-group-item fragment fade-in" data-fragment-index=2>Enjoys ☕️ & food</li>
                   </ul>
                 </div>
               </div>
             </div>
+            <aside class="notes">
+              <p>Naturally being in the PNW, I like hiking.</p>
+              <p>Being in Portland, there's no shortage of specialty coffee and novel food</p>
+              <p>Probably my most niche hobby is sim racing</p>
+            </aside>
           </section>
           <section>
+            <aside class="notes">
+              <p>I did my PhD in physical organic chemistry at UNSW</p>
+              <p>My research focused on the nitty gritty details of reaction mechanisms, initiated and probed with lasers</p>
+              <p>Here's a picture of me aligning a laser as a grad student at our then newly built lab</p>
+            </aside>
             <div class="container text-center">
               <div class="row align-items-center">
                 <div class="col-6 align-items-center">
@@ -83,6 +100,14 @@
             </div>
           </section>
           <section>
+            <aside class="notes">
+              <p>My research work was trying to get state-to-state reaction mechanisms</p>
+              <p>We follow the course of a reaction from a prepared initial quantum state</p>
+              <p>We selectively detect reaction products, again with well-defined quantum states</p>
+              <p>Combined with VMI, we have a complete picture of the dynamics of how a molecule in the atmosphere might decompose with UV light</p>
+              <p>To complement experiments, I also did "kitchen sink" ab initio thermochemistry</p>
+              <p>For computational chemists, this is including things like Born-Oppenheimer corrections, CCSDT(Q), relativistic corrections</p>
+            </aside>
             <div class="container align-items-center">
               <div class="row align-items-center">
                 <div class="col rounded-5 fade-in">
@@ -96,7 +121,7 @@
                 <div class="col rounded-5 fade-in">
                   <figure>
                     <img src="assets/vmi.png" class="img-fluid rounded-5">
-                    <figcaption>
+                    <figcaption class="mt-3">
                       <p>Ion imaging</p>
                     </figcaption>
                   </figure>
@@ -104,15 +129,26 @@
                 <div class="col rounded-5 fade-in">
                   <figure>
                     <img src="assets/ethane.png" class="img-fluid rounded-5">
-                    <figcaption>
+                    <figcaption class="mt-3">
                       <p>High accuracy<br>ab initio thermochemistry</p>
                     </figcaption>
                   </figure>
                 </div>
               </div>
             </div>
+            <footer class="mt-3">
+              <cite class="citation text-start">
+                <p><b>Lee</b>, et al.; Two roaming pathways in the photolysis of CH<sub>3</sub>CHO, <i>Chemical Science</i> (2014)</p>
+                <p><b>Lee</b>, Rabidoux, Stanton; Cation Ion States of Ethane, <i>JPCA</i> (2016)</p>
+              </cite>
+            </footer>
           </section>
           <section>
+            <aside class="notes">
+              <p>After my PhD, I changed fields slightly into molecular spectroscopy and astrophysics</p>
+              <p>During this time I got to travel to remote radio telescopes like at Mauna Kea</p>
+              <p>I got a lot of experience working across disciplines with physicists and astronomers</p>
+            </aside>
             <div class="container text-center">
               <div class="row align-items-center">
                 <div class="col-6 align-items-center">
@@ -130,20 +166,29 @@
             </div>
           </section>
           <section>
+            <aside class="notes">
+              <p>Core research areas included</p>
+              <p>The role of aromatic chemistry in the interstellar medium</p>
+              <p>How do these thermodynamic sinks influence the chemistry and physics of astrophysical environments</p>
+              <p>We try and replicate this chemistry by exposing precursor molecules to high energy plasma</p>
+              <p>Automate experiments and analysis to identify reaction products</p>
+              <p>Naturally you end up with a lot of unknown molecules</p>
+              <p>Early application of deep learning to inverse problem of determining structure from experimental determinables</p>
+            </aside>
             <div class="container align-items-center">
               <div class="row align-items-center">
                 <div class="col rounded-5 fade-in">
                   <figure>
-                    <img src="assets/ethynethiol.png" class="img-fluid rounded-5">
-                    <figcaption>
-                      <p>Spectroscopy of reactive intermediates</p>
+                    <img src="assets/naph.png" class="img-fluid rounded-5">
+                    <figcaption class="mt-3">
+                      <p>Growth and destruction of aromatic molecules in space</p>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="col rounded-5 fade-in">
                   <figure>
                     <img src="assets/mixture.png" class="img-fluid rounded-5">
-                    <figcaption>
+                    <figcaption class="mt-3">
                       <p>Automated spectroscopic mixture separation</p>
                     </figcaption>
                   </figure>
@@ -151,61 +196,47 @@
                 <div class="col rounded-5 fade-in">
                   <figure>
                     <img src="assets/whatsthatmol.png" class="img-fluid rounded-5">
-                    <figcaption>
+                    <figcaption class="mt-3">
                       <p>Structure determination with deep learning</p>
                     </figcaption>
                   </figure>
                 </div>
               </div>
-            </div>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h1>Present Day</h1>
-            <hr>
-            <h2>AI4Science</h2>
-          </section>
-          <section>
-            <div class="container text-center">
               <div class="row">
                 <div class="col">
-                  <div class="card h-100 align-items-center">
-                    <img src="./assets/triton-logo.png" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        High-performance computing
-                      </h5>
-                    </div>
-                  </div>
+                  <cite class="citation text-start">
+                    <p>McGuire <i>et al.</i>; Detection of two interstellar <br>polycyclic aromatic hydrocarbons via<br>spectral matched filtering, <i>Science</i> (2021)</p>
+                  </cite>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="./assets/neural-splash.png" class="card-img-top rounded-circle">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Deep learning with materials & chemistry
-                      </h5>
-                    </div>
-                  </div>
+                  <cite class="citation text-start">
+                    <p><b>Lee</b>, McCarthy; A Study of Benzene Fragmentation,<br>Isomerization, and Growth, <i>JPCL</i> (2019) </p>
+                  </cite>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="..." class="card-img-top rounded-circle">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Agentic workflows for science
-                      </h5>
-                    </div>
-                  </div>
+                  <cite class="citation text-start">
+                    <p>McCarthy, <b>Lee</b>; Molecule Identification with Rotational Spectroscopy and Deep Learning,<br><i>JPCA</i> (2020)</p>
+                  </cite>
                 </div>
               </div>
             </div>
           </section>
           <section>
+            <aside class="notes">
+              <p>Fast forward to today, I'm a research scientist at Intel Labs working in AI4Science</p>
+              <p>Intersection of three areas</p>
+              <p>Using high performance computing for computational chemistry, improved deep learning kernels</p>
+              <p>Designing agentic workflows and systems to assist with scientific discovery: multimodal RAG and scientific tool calling</p>
+              <p>This is something we've been gradually building out with our Intel Foundry partners for deployment</p>
+              <p>Transition</p>
+              <p>What I'm talking about today: applying deep learning to materials modeling</p>
+            </aside>
             <div class="container text-center">
               <div class="row">
-                <div class="col opacity-50">
+                <h2>Present day&mdash;AI4Science @ Intel Labs</h2>
+              </div>
+              <div class="row align-items-center">
+                <div class="col fragment semi-fade-out" data-fragment-index="1">
                   <div class="card h-100">
                     <img src="./assets/triton-logo.png" class="card-img-top">
                     <div class="card-body">
@@ -215,22 +246,22 @@
                     </div>
                   </div>
                 </div>
+                <div class="col fragment semi-fade-out" data-fragment-index=1>
+                  <div class="card h-100">
+                    <img src="./assets/agents.svg" class="h-100 card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Agentic workflows for science
+                      </h5>
+                    </div>
+                  </div>
+                </div>
                 <div class="col">
                   <div class="card h-100">
                     <img src="./assets/neural-splash.png" class="card-img-top rounded-circle">
                     <div class="card-body">
                       <h5 class="card-title">
-                        Deep learning with materials & chemistry
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col opacity-50">
-                  <div class="card h-100">
-                    <img src="..." class="card-img-top rounded-circle">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Agentic workflows for science
+                        Deep learning with molecules & materials
                       </h5>
                     </div>
                   </div>
@@ -240,34 +271,103 @@
           </section>
         </section>
         <section>
+          <aside class="notes">
+            <p>The core topic today will be research efforts over the last few years</p>
+            <p>Building out the capabilities for experimenting with AI surrogates of atomistic modeling</p>
+            <p>The current progress in the journey to making these models useful for real life applications</p>
+            <p>Everything hinges on this idea of understanding and optimizing representations of atomic systems</p>
+          </aside>
           <section>
             <h1>Neural representations of atomistic systems</h1>
             <hr>
             <h3>What, why, and how?</h3>
           </section>
           <section>
+            <aside class="notes">
+              <p>Beginning with a general problem statement: we want to find a molecule or material that's the right fit for some problem</p>
+              <p>Could be finding a semiconductor material with exact band gap requirements</p>
+              <p>Instead of going in the lab and combinatorially trying things over many years, if we could capture the approximate behavior we could turn it into constrained optimization</p>
+              <p>Question is: where do we start to get such a model?</p>
+              <p>Alternatively put, this quote is like all models are wrong, but some are useful</p>
+              <p>We don't need to replicate things exactly but as long as there are guaranteed correspondences, then a map is useful</p>
+              <p>So to solve our problem statement, what we need is a general purpose map of chemical space</p>
+            </aside>
             <h1>Problem statement</h1>
+            <hr>
             <p class="fragment fade-in-then-semi-out">We want a molecule/material with property $X$ for application $Y$</p>
+            <p class="fragment fade-in-then-semi-out">Could be an optimization problem if we had a model function&mdash;how do we obtain a good model?</p>
             <figure class="mt-5 fragment fade-in">
               <blockquote class="blockquote">
-                <p>A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness.</p>
+                <p>A map is not the territory it represents,<br>but, if correct,<br>it has a similar structure to the territory, which accounts for its usefulness.</p>
               </blockquote>
               <figcaption class="blockquote-footer">
                 <p>Alfred Korzybski</p>
               </figcaption>
             </figure>
-            <p class="fragment mt-5 fst-italic">We want a useful map of chemical space</p>
+            <p class="fragment mt-5 fst-italic">We need a useful map of chemical space<br>&mdash;or a sufficiently holistic representation</p>
           </section>
           <section data-background-image="./assets/chemical-boston.svg">
+            <aside class="notes">
+              <p>Conceptually, a map doesn't have to have a 1:1 correspondence, but good enough for A to B</p>
+              <p>The dream would be to have a foundation model that unifies chemistry domains, in a way that humans haven't been able to do well</p>
+              <p>The ideal chemical map would tell you where a composition and structure might be, and what properties it might have</p>
+            </aside>
           </section>
           <section>
-            <h1>How do we build a useful map of chemical space?</h1>
+            <h1>How do we build a useful representation?</h1>
           </section>
           <section>
+            <aside class="notes">
+              <p>To build a map, we need to start sampling the space we want to map out</p>
+              <p>Curating and organizing properties of interest gives us anchor points in this space</p>
+              <p>The remaining thing is to train a neural network to accurately represent our map; we need to choose some architecture</p>
+            </aside>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col">
+                  <figure>
+                    <img src="./assets/unit-cell.svg" class="img-fluid rounded-2">
+                    <figcaption>
+                      <p class="mt-3">Structure and composition correlate with properties</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col fragment fade-in">
+                  <figure>
+                    <ul class="list-group">
+                      <li class="list-group-item fs-5">Band gap</li>
+                      <li class="list-group-item fs-5">Formation energy</li>
+                      <li class="list-group-item fs-5">Energy/force</li>
+                      <li class="list-group-item fs-5">Stress</li>
+                      <li class="list-group-item fs-5">Polarization</li>
+                      <li class="list-group-item fs-5">Multipole moments</li>
+                      <li class="list-group-item fs-5">Atomic charges</li>
+                    </ul>
+                    <figcaption>
+                      <p class="mt-3">Sample chemical space to curate datasets</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col fragment fade-in">
+                  <figure>
+                    <img src="./assets/neural-splash.png" class="img-fluid rounded-circle">
+                    <figcaption>
+                      <p class="mt-3">Trained neural networks learn to represent chemical space</p>
+                    </figcaption>
+                  </figure>
+                </div>
+            </div>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>We developed MatSciML over the last few years to help with the experimentation process</p>
+              <p>In essence, piecing these disparate parts together in a composable way</p>
+              <p>The first paper we wrote on the framework came out in early 2023 in TMLR</p>
+            </aside>
             <div class="container">
               <div class="row">
                 <div class="col-4 d-flex align-items-center">
-                  <h2 style="text-align: left;">Learning from data</h2>
+                  <h2 style="text-align: left;">Learning to map from data</h2>
                   <hr>
                 </div>
                 <div class="col-8">
@@ -277,15 +377,22 @@
                     </figcaption>
                     <img class="rounded-5 img-fluid" src="./assets/matsciml.png">
                   </figure>
-                  <p>Framework for data-driven experimentation</p>
+                  <p>Framework for glueing data with models</p>
                 </div>
               </div>
             </div>
             <footer>
-              <cite class="citation text-start">Miret, <span class="fst-bold"><b>Lee</b></span>, Gonzales, Nassar, Spellings;<br>The Open MatSciML Toolkit (2023), TMLR</cite>
+              <cite class="citation text-start">Miret, <span class="fst-bold"><b>Lee</b></span>, Gonzales, Nassar, Spellings;<br>The Open MatSciML Toolkit, TMLR (2023)</cite>
             </footer>
           </section>
           <section>
+            <aside class="notes">
+              <p>MatSciML builds out the full end-to-end workflow for foundation model experimentation starting with data down to evaluation</p>
+              <p>We provide interfaces to common large scale datasets like Open Catalyst to populate our map as much as possible</p>
+              <p>We abstract out available information in datasets as "tasks" that dictate what models learn</p>
+              <p>We also provide a number of interfaces and implementations for models like MACE, FAENet</p>
+              <p>All of this is modular and composable, which allows us to ablate and experiment with different design choices</p>
+            </aside>
             <div class="container">
               <div class="row align-items-center">
                 <div class="col">
@@ -294,8 +401,8 @@
                   </figure>
                 </div>
                 <div class="col text-end">
-                  <p class="fragment fade-in-then-semi-out">Interfaces to major datasets: Open Catalyst, Materials Project, Alexandria, NOMAD</p>
                   <p class="fragment fade-in-then-semi-out">Modular pipeline for foundation model training</p>
+                  <p class="fragment fade-in-then-semi-out">Interfaces to major datasets: Open Catalyst, Materials Project, Alexandria, NOMAD</p>
                   <p class="fragment fade-in-then-semi-out">Reference model interfaces and implementations</p>
                   <p class="fragment fade-in fst-bold">Free composition of multiple tasks and datasets</p>
                 </div>
@@ -306,16 +413,82 @@
             </footer>
           </section>
           <section>
+            <aside class="notes">
+              <p>More concretely, our workflow looks like this</p>
+              <p>We have a crystal structure initially represented as a point cloud of atoms in space</p>
+              <p>We use the positions and lattice parameters to generate graph edges to construct spatial relationships between atoms, respecting PBC</p>
+              <p>This graph is then fed into an encoding neural network that is typically graph-based</p>
+              <p>The output of this abstract model are node embeddings: transformed vector representations of atoms</p>
+              <p>We can then collapse these node features by aggregating them to obtain a joint graph embedding, i.e. a single vector that represents the system</p>
+              <p>These shared vector embeddings are then used by separate, individual output layers to predict quantities of interest depending on the task</p>
+            </aside>
             <div class="container">
               <div class="row align-items-center">
                 <div class="col-8">
                   <figure>
-                    <img src="./assets/matsciml-benchmark.png" class="img-fluid">
+                    <img src="./assets/embedding-pipeline.svg" class="img-fluid rounded-2" style="max-height: 30vw;">
+                  </figure>
+                </div>
+                <div class="col-4 text-end">
+                  <p class="fragment fade-in-then-semi-out">Graph wiring according to periodic boundary conditions</p>
+                  <p class="fragment fade-in-then-semi-out">Abstract encoder processes node features</p>
+                  <p class="fragment fade-in-then-semi-out">Output heads share embedding space to predict task labels</p>
+                  <p class="fragment fade-in">e.g. Energy/Forces as a task produces an MLIP</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>So we nominally have the ingredients for a map through MatSciML</p>
+              <p>The question is how do we now assess the goodness of what we've put together?</p>
+            </aside>
+            <h1>How do we know we have a useful representation?</h1>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>One domain MatSciML was well suited for was understanding the composition of datasets</p>
+              <p>If we have a good, unified representation then we expect that models should generalize well across data domains and tasks</p>
+              <p>Energy and force prediction is interesting for simulations; what happens when we try and train a model jointly on multiple datasets and/or tasks?</p>
+              <p>As an example, taking S2EF is the baseline, combining with either ISRE, MP20, or LiPS adds more data in the mix that have varying degrees of alignment in composition and task labels</p>
+            </aside>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-4 text-start">
+                  <h2>Aligning data</h2>
+                </div>
+                <div class="col-8 text-end">
+                  <p class="fragment fade-in"><b>S2EF</b> and <b>IS2RE</b> are energy/force data from Open Catalyst</p>
+                  <p class="fragment fade-in">S2EF is conventional MLIP; IS2RE is initial structure-to-relaxed energy (task)</p>
+                  <p class="fragment fade-in"><b>MP20</b> is Materials Project, with formation energy labels (data/task)</p>
+                  <p class="fragment fade-in"><b>LiPS</b> is a single composition energy/force trajectory (data)</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>This matrix is the relative improvement in testing, best read in rows</p>
+              <p>Blue corresponds to improvements, white is zero, and red is degradation</p>
+              <p>Our general finding was that generally when the composition/structural space and task labels align, models performed better combined than alone</p>
+              <p>When they don't align, our hypothesis is that their modalities differ too much to be bridged</p>
+              <p>S2EF seems benefit the most: IS2RE shares composition/structures, and LiPS aligns on task</p>
+              <p>IS2RE and MP20 are unique in the mix in terms of task, and doesn't improve</p>
+              <p>LiPS degrades in performance when paired with any of these datasets</p>
+              <p>An alternative view I've been championing is through embedding visualizations to try and explain these behaviors</p>
+            </aside>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <figure>
+                    <img src="./assets/matsciml-dataset.svg" class="img-fluid">
                   </figure>
                 </div>
                 <div class="col text-end">
-                  <p>Looking for synergies between datasets that improve modeling performance</p>
-                  <p>Certain combinations of datasets improve joint modeling performance</p>
+                  <p>Base encoder is $E(n)$-GNN</p>
+                  <p class="fragment fade-in"><b>Dataset composition</b> and <b>task</b> alignment generally improves model performance</p>
+                  <p class="fragment fade-in">Poor or no alignment <b>degrades</b> performance</p>
+                  <p class="fragment fade-in">Embedding visualizations offer a partial explanation</p>
                 </div>
               </div>
             </div>
@@ -328,6 +501,37 @@
             </footer>
           </section>
           <section>
+            <aside class="notes">
+              <p>The way we perform these embedding visualizations is to take the graph or node embeddings</p>
+              <p>We use methods traditional methods like PCA, or newer ones like UMAP and PHATE to preserve and visualize structure of the learned latent spaces</p>
+              <p>Depending on the method, we can look at global and/or local structures like clusters</p>
+              <p>What these visualizations offer is a view into model "perception": how these trained models partition chemical space after training</p>
+            </aside>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col">
+                  <figure>
+                    <img src="./assets/embedding-projection.svg" class="img-fluid rounded-2" style="max-height: 30vw">
+                  </figure>
+                </div>
+                <div class="col text-end">
+                  <p class="fragment fade-in-then-semi-out">Qualitative explanation of observations using low-dimensional visualizations</p>
+                  <p class="fragment fade-in-then-semi-out">Techniques such as PCA, UMAP, and PHATE</p>
+                  <p class="fragment fade-in">Maps of composition and structural space&mdash;as seen by models trained on multiple tasks and datasets</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>Using an E(n)-GNN encoder, we embed and project data samples from some of these datasets</p>
+              <p>Carolina DB is close to 200k of ternary and quarternary structures</p>
+              <p>This perspective informs us that OCP and MP datasets overlap quite a bit more than others</p>
+              <p>Many MLIPs are trained on this combination, and show remarkable results; it's easier to generalize across this small gap</p>
+              <p>But from a "building a useful map" perspective, we can quite clearly see that they cover a niche within chemical space</p>
+              <p>This problem is shared between both data domain and model architecture since embeddings are reflection of both</p>
+              <p>To improve upon either, we still need a better understanding of what actually gets captured in these models</p>
+            </aside>
             <div class="container-fluid">
               <div class="row align-items-center">
                 <div class="col-8">
@@ -338,7 +542,7 @@
                 <div class="col-4 text-end">
                   <p class="fragment fade-in-then-semi-out">Projections of latent structures show dataset distribution modes</p>
                   <p class="fragment fade-in-then-semi-out">Model test performance improves with data overlap</p>
-                  <p class="fragment fade-in">...but performs worse when data distribution is discontinuous!</p>
+                  <p class="fragment fade-in">Representation engineering can potentially bridge these gaps</p>
                 </div>
               </div>
             </div>
@@ -349,28 +553,211 @@
         </section>
         <section>
           <section>
-            <h1>Decomposing <span class="text-body-secondary">(equivariant)</span> representations</h1>
+            <aside class="notes">
+              <p></p>
+              <p>The path to improving data is straightforward to a chemist, but architecture design is a lot more opaque</p>
+            </aside>
+            <h1>Architectural Explorations</h1>
             <hr>
-            <h3>How do we bridge the gap between research and production?</h3>
+            <h3>Decomposing <span class="text-body-secondary">(equivariant)</span> representations</h3>
           </section>
           <section>
-            <p>Two pieces of recent work that indicate we need better crafting of learned representations</p>
-            <p>Recent NeurIPS AI4Mat work on equivariant latents</p>
-            <p>Work with Pete on tensor property prediction</p>
-          </section>
-          <section>
+            <aside class="notes">
+              <p>The class of modeling I'd looked into is specific</p>
+              <p>Equivariant models preserve this correspondence in transformations between the 3D object and the embedding space</p>
+              <p>In theory, models should behave more predictably and need less data to perform well</p>
+            </aside>
             <div class="container">
-              <div class="row">
-                <div class="col-4 d-flex align-items-center">
-                  <h2 style='text-align: left;'>Path to production</h2>
-                  <hr>
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <h2 class="text-start">Equivariant graph neural networks</h2>
                 </div>
-                <div class="col-8 text-end">
-                  <p>Diversity in composition <br>and structural space</p>
-                  <p>Inference at coupled-cluster levels</p>
+                <div class="col">
+                  <figure>
+                    <img src="assets/equivariance.svg" class="img-fluid">
+                    <figcaption class="mt-3">
+                      <p>Preserved correspondence in object translations and rotations</p>
+                    </figcaption>
+                  </figure>
                 </div>
               </div>
             </div>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>The overall action of these equivariant models are two fold</p>
+              <p>We use a basis of special functions called spherical harmonics</p>
+              <p>In the space of spherical harmonics, objects are equivariant to translations and rotations in Euclidean space</p>
+              <p>Normally neural network transformations would break this equivariance</p>
+              <p>Tensor product formalism uses angular momentum coupling rules to preserve equivariance</p>
+              <p>In essence, feature transforms between dimensions are only allowed if they do not break equivariance</p>
+            </aside>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col">
+                  <figure>
+                    <img src="assets/sph-harm.png" class="img-fluid rounded-2">
+                    <figcaption class="mt-3">
+                      <p>Structures embedded with spherical harmonics become $SO(3)$ equivariant</p>
+                      <p>Basis/feature size dependent on angular momentum $l$</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col">
+                  <figure>
+                    <img src="assets/tensor-products.png" class="img-fluid rounded-2">
+                    <figcaption class="mt-3">
+                      <p>Tensor products between angular-momentum conserving feature sets preserve equivariance</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <footer>
+                <cite class="citation"><p>e3nn library</p></cite>
+              </footer>
+            </div>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col">
+                  <p>What do equivariant models learn?</p>
+                </div>
+                <div class="col">
+                  <p>$l=0,1,2$ have physical interpretations&mdash;what about $l>2$?</p>
+                </div>
+                <div class="col">
+                  <p>What do their latent variables represent?</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col">
+                  <figure>
+                    <figcaption>
+                      <p><i class="fa-brands fa-github"></i> IntelLabs/EquiTriton</p>
+                    </figcaption>
+                    <img src="assets/equitriton.png" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="col text-end">
+                  <p>Triton-lang kernels for equivariant neural networks</p>
+                  <p>Efficient spherical harmonics for up to $l=10$</p>
+                  <p>Apply projection methods to decomposed equivariant embeddings</p>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <cite class="citation text-start">
+                <p><b>Lee</b>, Galkin, Miret; Deconstructing equivariant representations<br>in molecular systems, NeurIPS AI4Mat (2024)</p>
+              </cite>
+            </footer>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>For these experiments, we performed some toy experiments</p>
+              <p>Training a simple Nequip-like architecture to predict QM9 energies</p>
+              <p>The equivariant interaction block works by first embedding structure in spherical harmonic basis</p>
+              <p>We transform the radial basis, and then compute messages as the tensor product</p>
+              <p>Each embedding then becomes $h[2l+1]$, which we can decompose back into individual $l$</p>
+            </aside>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col">
+                  <figure>
+                    <img src="./assets/interaction-code.png" class="img-fluid">
+                    <figcaption class="mt-3">
+                      <p>Equivariant interaction block</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col text-end">
+                  <p>Model learns representation via QM9 energy prediction</p>
+                  <p>Dimensionality of node/graph embeddings given by<br>$h[2l +1]$</p>
+                  <p>Projection analysis performed on features within given $l$</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <aside class="notes">
+              <p></p>
+            </aside>
+            <div class="container">
+              <div class="row align-items-center d-flex">
+                <figure>
+                  <img src="./assets/canonical-small.png" class="img-fluid rounded-2">
+                </figure>
+              </div>
+              <div class="row align-items-center">
+                <figure class="fragment fade-in">
+                  <img src="./assets/canonical-large.png" class="img-fluid rounded-2">
+                </figure>
+              </div>
+            </div>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>The advantage of doing pretraining is so that you can catch and steer the behavior of models before full scale training</p>
+              <p>Having measurables based purely on embeddings means we can predict its behavior **before** we evaluate it on properties</p>
+              <p>Generalization</p>
+            </aside>
+            <div class="container">
+              <div class="row">
+                <div class="col-4 d-flex align-items-center">
+                  <h2 style='text-align: left;'>Future &<br> ongoing work</h2>
+                  <hr>
+                </div>
+                <div class="col-8 text-end">
+                  <p>Improving generalization through classifier pretraining and regularization</p>
+                  <p>Quantiative metrics on embeddings&mdash;lessons from semi-self-supervised learning</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>Bringing it back to our original goal, how do we build a useful map?</p>
+              <p>We recently submitted our "positions" paper to ICML with collaborators</p>
+              <p>Here I'm highlighting two areas that are critical to</p>
+              <p>In terms of data, the MatSciML experiments I talked about earlier shows that models are unable to bridge the gap between data modes</p>
+              <p>When you plot the distribution of compositions in MP and the American Mineral Crystal Structures database, we know "real-world" materials are significantly more complex</p>
+              <p>The other area is the quality of the labels&mdash;we know DFT fails to describe complicated systems</p>
+              <p>Major advantage of models is constant inference speed: computationally it costs the same to approximate DFT as it does CCSD(T), why not the latter</p>
+              <p>With the help of AI/ML, we're hoping that scaling up inference to the scale of devices will allow us to solve problems in a fully atomistic way, that is only done with finite elements now</p>
+              <p>Examples of this are in chip design: model thermal conductivity at the defect level</p>
+            </aside>
+            <div class="container">
+              <div class="row">
+                <h2>Path to a useful map</h2>
+                <h4>...or production</h4>
+                <hr>
+              </div>
+              <div class="row h-100 align-items-center">
+                <div class="col">
+                  <figure>
+                    <img src="./assets/amcsd.png" class="img-fluid rounded-5">
+                    <figcaption class="mt-3">
+                      <p>Aligning data domains</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col">
+                  <figure>
+                    <img src="assets/device-scale.png" class="img-fluid rounded-5">
+                    <figcaption class="mt-3">
+                      <p>Coupled cluster at device scale</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <cite class="text-start citation">Miret, <b>Lee</b>, Gonzales, Mannan, Krishnan<br>Energy & force regression on DFT trajectories is not enough<br>for universal machine learning interatomic potentials,<br>Submitted to ICML (2025)<br>arXiv:2502.03660</cite>
+            </footer>
           </section>
         </section>
         <section>
@@ -395,16 +782,77 @@
             <div class="container">
               <div class="row">
                 <div class="col-4 d-flex align-items-center">
-                  <p class="text-start">Acknowledgements</p>
+                  <p class="text-start"><b>Acknowledgements</b></p>
                   <hr>
                 </div>
                 <div class="col-8 text-end">
                   <div class="row d-flex">
-                    <p><b>Intel Labs</b></p><p>Santiago Miret &middot; Carmelo Gonzales<br>Mikhail Galkin &middot; Lory Wang</p>
+                    <p><b>Intel Labs</b>&mdash;</p><p>Santiago Miret &middot; Carmelo Gonzales<br>Mikhail Galkin &middot; Lory Wang</p>
                   </div>
                   <div class="row d-flex">
-                    <p><b>MIT</b></p><p>Pete Miedaner &middot; Shiang Fang</p>
+                    <p><b>MIT</b>&mdash;</p><p>Pete Miedaner &middot; Shiang Fang<br>Keith Nelson &middot; Tess Smidt</p>
                   </div>
+                  <div class="row d-flex">
+                    <p><b>IIT Delhi</b>&mdash;</p><p>Sajid Mannan &middot; N. M. Anoop Krishnan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <aside class="notes">
+              <p>Not a lot of people would be able to align a laser, run ab initio calculations, and design and implement an AI framework</p>
+              <p>I think this perspective is relatively unique, and has me thinking about things that go beyond MLIPs</p>
+              <p>Things I've talked about today are partial steps to building out a useful map, and capabilities along the way</p>
+              <p>But the true capability that might be unique to my perspective and Lila is a more holistic and unified approach</p>
+              <p>The idea of learning joint representations from experimental observables would bring us as close as possible to a real foundation model</p>
+              <p>This unified embedding space could be used for the full autonomous stack: conditional generation, in-the-loop simulations, and finally experimental validation</p>
+            </aside>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col text-start">
+                  <h2>Pitch</h2>
+                  <hr>
+                  <p>What's needed to bridge the gap between model research and application</p>
+                  <p>Holistic, "full stack" chemical autonomy needs <b>generation</b>, <b>simulation</b>, and <b>validation</b></p>
+                </div>
+                <div class="col">
+                  <figure>
+                    <img src="./assets/universal_rep.png" class="img-fluid">
+                    <figcaption>
+                      <p>Unified neural representations beyond MLIPs</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col">
+                  <figure>
+                    <img src="assets/scholar-qr-code.png" class="img-fluid rounded-2">
+                    <figcaption>
+                      <p class="mt-3"><i class="ai ai-google-scholar"></i> Google Scholar</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col">
+                  <figure>
+                    <img src="assets/linkedin-qr-code.png" class="img-fluid rounded-2">
+                    <figcaption>
+                      <p class="mt-3"><i class="fa-brands fa-linkedin"></i> LinkedIn</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col">
+                  <figure>
+                    <img src="assets/icml-qr-code.png" class="img-fluid rounded-2">
+                    <figcaption>
+                      <p class="mt-3"><i class="ai ai-arxiv"></i> ICML Positions</p>
+                    </figcaption>
+                  </figure>
                 </div>
               </div>
             </div>
@@ -418,6 +866,7 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/math/math.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		<script>
 			// More info about initialization & config:
@@ -430,7 +879,7 @@
         autoPlayMedia: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealZoom ]
 			});
 		</script>
 	</body>

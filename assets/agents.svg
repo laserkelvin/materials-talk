@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="169.64729mm"
+   height="136.32358mm"
+   viewBox="0 0 169.64729 136.32358"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="agents.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.98777778"
+     inkscape:cx="271.82227"
+     inkscape:cy="322.94713"
+     inkscape:window-width="1290"
+     inkscape:window-height="1331"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker11"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path11" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ArrowWide"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path1" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(2.4483414,-15.726148)">
+    <g
+       id="g1"
+       transform="translate(12.618662,-30.304577)">
+      <rect
+         style="fill:#f1e89f;fill-opacity:1;stroke:#ffffff;stroke-width:0.701878;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:3.1;stroke-opacity:1"
+         id="rect1"
+         width="53.231129"
+         height="23.684166"
+         x="43.141079"
+         y="46.381664"
+         ry="4.3990574" />
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Mononoki Nerd Font';-inkscape-font-specification:'Mononoki Nerd Font';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="69.511108"
+         y="60.230347"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="69.511108"
+           y="60.230347">Prompt</tspan></text>
+    </g>
+    <g
+       id="g2"
+       transform="translate(12.618662,6.9744505)">
+      <rect
+         style="fill:#f2c788;fill-opacity:1;stroke:#ffffff;stroke-width:0.701878;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:3.1;stroke-opacity:1"
+         id="rect2"
+         width="53.231129"
+         height="23.684166"
+         x="43.141079"
+         y="46.381664"
+         ry="4.3990574" />
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Mononoki Nerd Font';-inkscape-font-specification:'Mononoki Nerd Font';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="69.511108"
+         y="60.230347"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="69.511108"
+           y="60.230347">Agent</tspan></text>
+    </g>
+    <g
+       id="g3"
+       transform="translate(12.618662,44.320442)">
+      <rect
+         style="fill:#eca581;fill-opacity:1;stroke:#ffffff;stroke-width:0.701878;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:3.1;stroke-opacity:1"
+         id="rect3"
+         width="53.231129"
+         height="23.684166"
+         x="43.141079"
+         y="46.381664"
+         ry="4.3990574" />
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:1.25;font-family:'Mononoki Nerd Font';-inkscape-font-specification:'Mononoki Nerd Font';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="69.511108"
+         y="60.230347"
+         id="text3"><tspan
+           sodipodi:role="line"
+           id="tspan3"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="69.511108"
+           y="60.230347">Planning</tspan></text>
+    </g>
+    <g
+       id="g7"
+       transform="translate(-0.3053873)">
+      <g
+         id="g4"
+         transform="translate(12.924049,81.632952)">
+        <rect
+           style="fill:#de8687;fill-opacity:1;stroke:#ffffff;stroke-width:0.701878;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:3.1;stroke-opacity:1"
+           id="rect4"
+           width="53.231129"
+           height="23.684166"
+           x="43.141079"
+           y="46.381664"
+           ry="4.3990574" />
+        <text
+           xml:space="preserve"
+           style="font-size:8.46667px;line-height:1.25;font-family:'Mononoki Nerd Font';-inkscape-font-specification:'Mononoki Nerd Font';text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="69.511108"
+           y="60.230347"
+           id="text4"><tspan
+             sodipodi:role="line"
+             id="tspan4"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="69.511108"
+             y="60.230347">CP2K</tspan></text>
+      </g>
+      <g
+         id="g5"
+         transform="translate(70.781192,81.632952)">
+        <rect
+           style="fill:#de8687;fill-opacity:1;stroke:#ffffff;stroke-width:0.701878;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:3.1;stroke-opacity:1"
+           id="rect5"
+           width="53.231129"
+           height="23.684166"
+           x="43.141079"
+           y="46.381664"
+           ry="4.3990574" />
+        <text
+           xml:space="preserve"
+           style="font-size:8.46667px;line-height:1.25;font-family:'Mononoki Nerd Font';-inkscape-font-specification:'Mononoki Nerd Font';text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="69.511108"
+           y="60.230347"
+           id="text5"><tspan
+             sodipodi:role="line"
+             id="tspan5"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="69.511108"
+             y="60.230347">RAG</tspan></text>
+      </g>
+      <g
+         id="g6"
+         transform="translate(-44.933094,81.632952)">
+        <rect
+           style="fill:#de8687;fill-opacity:1;stroke:#ffffff;stroke-width:0.701878;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:3.1;stroke-opacity:1"
+           id="rect6"
+           width="53.231129"
+           height="23.684166"
+           x="43.141079"
+           y="46.381664"
+           ry="4.3990574" />
+        <text
+           xml:space="preserve"
+           style="font-size:8.46667px;line-height:1.25;font-family:'Mononoki Nerd Font';-inkscape-font-specification:'Mononoki Nerd Font';text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="69.511108"
+           y="60.230347"
+           id="text6"><tspan
+             sodipodi:role="line"
+             id="tspan6"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="69.511108"
+             y="60.230347">LAMMPS</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.823718;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 82.375305,40.52114 V 52.239852"
+       id="path7" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.823718;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 82.375305,77.753283 V 89.471995"
+       id="path8" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.823718;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 82.375305,115.06579 V 126.7845"
+       id="path9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.965;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11)"
+       d="M 55.684657,114.21037 39.39595,126.3322"
+       id="path10" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.965;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11)"
+       d="M 109.70883,114.30969 125.63345,126.906"
+       id="path12" />
+  </g>
+</svg>
