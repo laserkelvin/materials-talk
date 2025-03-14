@@ -685,25 +685,56 @@
             </aside>
             <div class="container">
               <div class="row align-items-center d-flex">
-                <figure>
-                  <img src="./assets/canonical-small.png" class="img-fluid rounded-2">
-                </figure>
+                <div class="col">
+                  <figure>
+                    <img src="./assets/canonical-small.png" class="img-fluid rounded-2">
+                  </figure>
+                </div>
               </div>
               <div class="row align-items-center">
-                <figure class="fragment fade-in">
-                  <img src="./assets/canonical-large.png" class="img-fluid rounded-2">
-                </figure>
+                <div class="col">
+                  <figure class="fragment fade-in">
+                    <img src="./assets/canonical-large.png" class="img-fluid rounded-2">
+                  </figure>
+                </div>
               </div>
             </div>
           </section>
           <section>
-            <p>If we remove spherical harmonic terms, performance improves</p>
-            <p>This means we have to potentially think about $l$ as a hyperparameter</p>
-            <p>Not just a basis set, or we have to find ways to regularize</p>
+            <aside class="notes">
+              <p>If we remove spherical harmonic terms, performance improves</p>
+              <p>The rationale behind this is because you're adding noise to the regressor</p>
+              <p>This means we have to potentially think about $l$ as a hyperparameter</p>
+              <p>Not just a basis set, or we have to find ways to regularize</p>
+            </aside>
+            <div class="container">
+              <figure>
+                <img class="img-fluid rounded-2" src="assets/uncanonical-large.png">
+                <figcaption class="mt-3">
+                  <p>Removing $l=1,2$ adds latent structure to $l=3$</p>
+                  <p>Test error improves by $22 \times$ compared to $l=0,1,2$</p>
+                </figcaption>
+              </figure>
+            </div>
           </section>
           <section>
-            <p>Initial result was based off a scalar quantity</p>
-            <p>Follow-up with Pete on hyperpolarizability tensors shows the same thing happening</p>
+            <aside class="notes">
+              <p>Initial result was based off a scalar quantity</p>
+              <p>Follow-up with Pete on hyperpolarizability tensors shows the same thing happening</p>
+            </aside>
+            <div class="container">
+              <figure>
+                <img src="assets/hyperpolar.png" class="img-fluid rounded-2">
+                <figcaption class="mt-3">
+                  <p>PHATE projections from hyperpolarizability tensor prediction</p>
+                </figcaption>
+              </figure>
+            </div>
+            <footer>
+              <cite class="citation text-start">
+                <p>Miedaner, <b>Lee</b>, Fang, Smidt, Nelson;<br>Direct prediction of hyperpolarizability tensors <br>with equivariant neural networks, ICLR AI4Mat (2025)</p>
+              </cite>
+            </footer>
           </section>
           <section>
             <aside class="notes">
